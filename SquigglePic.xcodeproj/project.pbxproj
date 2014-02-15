@@ -22,6 +22,8 @@
 		92B6A4B918AF06F500FA8CC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B6A49818AF06F400FA8CC5 /* UIKit.framework */; };
 		92B6A4C118AF06F500FA8CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B6A4BF18AF06F500FA8CC5 /* InfoPlist.strings */; };
 		92B6A4C318AF06F500FA8CC5 /* SquigglePicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4C218AF06F500FA8CC5 /* SquigglePicTests.m */; };
+		92B6A4CD18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */; };
+		92B6A4CE18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		92B6A4BE18AF06F500FA8CC5 /* SquigglePicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SquigglePicTests-Info.plist"; sourceTree = "<group>"; };
 		92B6A4C018AF06F500FA8CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92B6A4C218AF06F500FA8CC5 /* SquigglePicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquigglePicTests.m; sourceTree = "<group>"; };
+		92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZZSmoothBezierInterp.m; sourceTree = "<group>"; };
+		92B6A4CF18AF097400FA8CC5 /* ZZZSmoothBezierInterp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZZSmoothBezierInterp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				92B6A4A318AF06F400FA8CC5 /* ZZZAppDelegate.h */,
+				92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */,
+				92B6A4CF18AF097400FA8CC5 /* ZZZSmoothBezierInterp.h */,
 				92B6A4A418AF06F400FA8CC5 /* ZZZAppDelegate.m */,
 				92B6A4A618AF06F400FA8CC5 /* Main_iPhone.storyboard */,
 				92B6A4A918AF06F400FA8CC5 /* Main_iPad.storyboard */,
@@ -255,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B6A4A118AF06F400FA8CC5 /* main.m in Sources */,
+				92B6A4CD18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */,
 				92B6A4A518AF06F400FA8CC5 /* ZZZAppDelegate.m in Sources */,
 				92B6A4AE18AF06F400FA8CC5 /* ZZZViewController.m in Sources */,
 			);
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B6A4C318AF06F500FA8CC5 /* SquigglePicTests.m in Sources */,
+				92B6A4CE18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
