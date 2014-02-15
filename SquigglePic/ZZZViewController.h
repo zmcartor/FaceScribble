@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZZZViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ZZZViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *rightToolbarButton;
 - (IBAction)rightToolbarTouch:(id)sender;
 

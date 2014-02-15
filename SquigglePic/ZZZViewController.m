@@ -39,19 +39,26 @@
 
 // TODO use an actionsheet to pick camera or library ...
 - (IBAction)leftToolbarTouch:(id)sender {
-    
-    // TODO verify the sourceType 
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {}
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self showActionSheetPhotoDatasource];
+        return;
+    }
     
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    // flip to library sourceType
-    //UIImagePickerControllerSourceTypeCamera
-    
     [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)showActionSheetPhotoDatasource {
+    UIActionSheet *popup = [[UIActionSheet alloc] initWithTitle:@"Select Sharing option:" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:
+                            @"Snap a picture",
+                            @"Choose from library",
+                            nil];
+    popup.tag = 1;
+    [popup showInView:[UIApplication sharedApplication].keyWindow];
 }
 
 #pragma mark - UIImagePickerDelegate
@@ -59,8 +66,26 @@
     
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+//- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+//    NSLog(@"cancelled");
+//    
+//}
 
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)popup clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    
+    if (buttonIndex == 0) {
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else {
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 
 @end
