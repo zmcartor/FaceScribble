@@ -140,19 +140,6 @@
     UIGraphicsEndImageContext();
 }
 
-// This will save in NSDict via <NSValueKey> : <NSArray>[realPath , FATPATH]
-- (void)saveCurrentPathWithTouchTarget:(UIBezierPath *)path touchTarget:(UIBezierPath *)touchTarget {
-    UIBezierPath *pathCopy = [path copy];
-    NSValue *key = [NSValue valueWithNonretainedObject:pathCopy];
-    [savedPaths setObject:@[pathCopy, touchTarget] forKey:key];
-}
-
-- (void)updatePath:(UIBezierPath *)path touchTarget:(UIBezierPath *)touchTarget {
-    NSValue *key = [NSValue valueWithNonretainedObject:path];
-    [savedPaths removeObjectForKey:key];
-    [savedPaths setObject:@[path,touchTarget] forKey:key];
-}
-
 #pragma Mark - UIBezier Path Datasource methods. TODO abstract these into separate class w protocol
 - (UIBezierPath *)createNewPath {
     UIBezierPath *path = [UIBezierPath bezierPath];
