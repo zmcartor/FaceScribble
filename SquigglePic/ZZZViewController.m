@@ -18,13 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     self.navigationController.toolbarHidden = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
     [view attachRecognizers];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"linedpaper"] ];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,6 +53,13 @@
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
+- (IBAction)colorButtonTouch:(id)sender {
+    
+    // pop open the color picker!
+    
+    
+}
+
 - (void)showActionSheetPhotoDatasource {
     UIActionSheet *popup = [[UIActionSheet alloc] initWithTitle:@"Select Sharing option:" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:
                             @"Snap a picture",
@@ -63,6 +71,8 @@
 
 #pragma mark - UIImagePickerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+   
+    // present the cropper control
     
 }
 

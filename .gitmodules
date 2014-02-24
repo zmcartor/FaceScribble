@@ -1,0 +1,3 @@
+[submodule "NLImageCropper"]
+	path = NLImageCropper
+	url = git@github.com:bilalmughal/NLImageCropper.git

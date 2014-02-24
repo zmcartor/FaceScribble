@@ -24,6 +24,8 @@
 		92B6A4C318AF06F500FA8CC5 /* SquigglePicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4C218AF06F500FA8CC5 /* SquigglePicTests.m */; };
 		92B6A4CD18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */; };
 		92B6A4CE18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */; };
+		987DE67618BA7FDC00318C00 /* linedpaper_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67418BA7FDC00318C00 /* linedpaper_@2x.png */; };
+		987DE67718BA7FDC00318C00 /* linedpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67518BA7FDC00318C00 /* linedpaper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		92B6A4C218AF06F500FA8CC5 /* SquigglePicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquigglePicTests.m; sourceTree = "<group>"; };
 		92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZZSmoothBezierInterp.m; sourceTree = "<group>"; };
 		92B6A4CF18AF097400FA8CC5 /* ZZZSmoothBezierInterp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZZSmoothBezierInterp.h; sourceTree = "<group>"; };
+		987DE67418BA7FDC00318C00 /* linedpaper_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linedpaper_@2x.png"; sourceTree = "<group>"; };
+		987DE67518BA7FDC00318C00 /* linedpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		92B6A49A18AF06F400FA8CC5 /* SquigglePic */ = {
 			isa = PBXGroup;
 			children = (
+				987DE67318BA7FC400318C00 /* Images */,
 				92B6A4A318AF06F400FA8CC5 /* ZZZAppDelegate.h */,
 				92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */,
 				92B6A4CF18AF097400FA8CC5 /* ZZZSmoothBezierInterp.h */,
@@ -159,6 +164,15 @@
 				92B6A4BF18AF06F500FA8CC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		987DE67318BA7FC400318C00 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				987DE67418BA7FDC00318C00 /* linedpaper_@2x.png */,
+				987DE67518BA7FDC00318C00 /* linedpaper.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B6A4AB18AF06F400FA8CC5 /* Main_iPad.storyboard in Resources */,
+				987DE67718BA7FDC00318C00 /* linedpaper.png in Resources */,
+				987DE67618BA7FDC00318C00 /* linedpaper_@2x.png in Resources */,
 				92B6A4B018AF06F400FA8CC5 /* Images.xcassets in Resources */,
 				92B6A4A818AF06F400FA8CC5 /* Main_iPhone.storyboard in Resources */,
 				92B6A49F18AF06F400FA8CC5 /* InfoPlist.strings in Resources */,
@@ -483,6 +499,7 @@
 				92B6A4C818AF06F500FA8CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92B6A4C918AF06F500FA8CC5 /* Build configuration list for PBXNativeTarget "SquigglePicTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +508,7 @@
 				92B6A4CB18AF06F500FA8CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

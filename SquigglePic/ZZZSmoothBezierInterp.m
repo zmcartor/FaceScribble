@@ -21,6 +21,17 @@
     int mode;
 }
 
+- (void)didMoveToSuperview {
+    // cache the background view into placeholder image.
+    // all paths are added to this image incrementally as an image cache
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
+    UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
+    [self.backgroundColor setFill];
+    [rectpath fill];
+    incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+}
+
 - (void)attachRecognizers {
         mode = 0;
         [self setMultipleTouchEnabled:NO];
@@ -39,12 +50,6 @@
         UITapGestureRecognizer *doubleTaprecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
         doubleTaprecog.numberOfTapsRequired = 2;
         [self addGestureRecognizer:doubleTaprecog];
-        
-        longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-        longPress.minimumPressDuration = 2.0;
-        [longPress setDelegate:self];
-        [longPress setCancelsTouchesInView:NO];
-        [self addGestureRecognizer:longPress];
 }
 
 - (void)tap:(UITapGestureRecognizer *)recog {
@@ -55,10 +60,6 @@
 - (void)doubleTap:(UITapGestureRecognizer *)recog {
     NSLog(@"Double tap!");
     
-}
-
-- (void)longPress: (UILongPressGestureRecognizer *)recog {
-    NSLog(@"Delete everything ?");
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
@@ -123,17 +124,15 @@
     [self touchesEnded:touches withEvent:event];
 }
 
+// TODO test that the lines are drown into the view !!
 - (void)cacheDrawingActivity:(UIBezierPath *)latestActivity {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
-    if (!incrementalImage){ // first time; paint background white
-        UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
-        [[UIColor whiteColor] setFill];
-        [rectpath fill];
-    }
     [incrementalImage drawAtPoint:CGPointZero];
 
     // Stroke the latest activity into the context
+    // TODO get the latest color
     [[UIColor blackColor] setStroke];
+    
     [latestActivity stroke];
     incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

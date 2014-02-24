@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s6d-dZ-Pgo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="ZZZSmoothBezierInterp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpG-hT-IuT">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="camera" id="qS1-3D-hTD">
@@ -26,9 +26,9 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="220" style="plain" systemItem="fixedSpace" id="aB6-LV-KxX"/>
-                                    <barButtonItem title="Item" id="SI3-D2-Ldz">
+                                    <barButtonItem title="Item" style="plain" id="SI3-D2-Ldz">
                                         <connections>
-                                            <action selector="rightToolbarTouch:" destination="vXZ-lx-hvc" id="JU0-LU-Xm8"/>
+                                            <action selector="colorButtonTouch:" destination="vXZ-lx-hvc" id="2gf-Ec-KNn"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -37,8 +37,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="colorButton" destination="SI3-D2-Ldz" id="nj7-Mk-HS9"/>
                         <outlet property="leftToolbarButton" destination="qS1-3D-hTD" id="KaR-sW-Hpu"/>
-                        <outlet property="rightToolbarButton" destination="SI3-D2-Ldz" id="HjT-fk-PZY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -48,6 +48,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
