@@ -26,6 +26,35 @@
 		92B6A4CE18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B6A4CC18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m */; };
 		987DE67618BA7FDC00318C00 /* linedpaper_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67418BA7FDC00318C00 /* linedpaper_@2x.png */; };
 		987DE67718BA7FDC00318C00 /* linedpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67518BA7FDC00318C00 /* linedpaper.png */; };
+		987DE6BB18BAE9F000318C00 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67918BAE9F000318C00 /* .gitignore */; };
+		987DE6BC18BAE9F000318C00 /* KKColorListPicker.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67A18BAE9F000318C00 /* KKColorListPicker.podspec */; };
+		987DE6BE18BAE9F000318C00 /* color_list_parser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67D18BAE9F000318C00 /* color_list_parser.rb */; };
+		987DE6BF18BAE9F000318C00 /* colors_crayola.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE67F18BAE9F000318C00 /* colors_crayola.plist */; };
+		987DE6C018BAE9F000318C00 /* colors_pantone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68018BAE9F000318C00 /* colors_pantone.plist */; };
+		987DE6C118BAE9F000318C00 /* colors_crayola.txt in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68218BAE9F000318C00 /* colors_crayola.txt */; };
+		987DE6C218BAE9F000318C00 /* colors_pantone.txt in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68318BAE9F000318C00 /* colors_pantone.txt */; };
+		987DE6C318BAE9F000318C00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68418BAE9F000318C00 /* README.md */; };
+		987DE6C418BAE9F000318C00 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68618BAE9F000318C00 /* 1.png */; };
+		987DE6C518BAE9F000318C00 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 987DE68718BAE9F000318C00 /* 2.png */; };
+		987DE6C618BAE9F000318C00 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE68D18BAE9F000318C00 /* UIColor+CustomColors.m */; };
+		987DE6C718BAE9F000318C00 /* UIView+KKToolKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE69018BAE9F000318C00 /* UIView+KKToolKitAdditions.m */; };
+		987DE6C818BAE9F000318C00 /* KKColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE69318BAE9F000318C00 /* KKColorCell.m */; };
+		987DE6C918BAE9F000318C00 /* KKColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987DE69418BAE9F000318C00 /* KKColorCell.xib */; };
+		987DE6CA18BAE9F000318C00 /* KKColorsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE69618BAE9F000318C00 /* KKColorsHeaderView.m */; };
+		987DE6CB18BAE9F000318C00 /* KKColorsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987DE69718BAE9F000318C00 /* KKColorsHeaderView.xib */; };
+		987DE6CC18BAE9F000318C00 /* KKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE69A18BAE9F000318C00 /* KKColor.m */; };
+		987DE6CD18BAE9F000318C00 /* KKColorsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE69D18BAE9F000318C00 /* KKColorsLoader.m */; };
+		987DE6CE18BAE9F000318C00 /* KKColorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE6A118BAE9F000318C00 /* KKColorListViewController.m */; };
+		987DE6CF18BAE9F000318C00 /* colors_crayola.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6A318BAE9F000318C00 /* colors_crayola.plist */; };
+		987DE6D018BAE9F000318C00 /* colors_pantone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6A418BAE9F000318C00 /* colors_pantone.plist */; };
+		987DE6D118BAE9F000318C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6A718BAE9F000318C00 /* Main.storyboard */; };
+		987DE6D218BAE9F000318C00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6A918BAE9F000318C00 /* InfoPlist.strings */; };
+		987DE6D418BAE9F000318C00 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE6AD18BAE9F000318C00 /* KKAppDelegate.m */; };
+		987DE6D518BAE9F000318C00 /* KKColorListPickerExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6AE18BAE9F000318C00 /* KKColorListPickerExample-Info.plist */; };
+		987DE6D618BAE9F000318C00 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE6B118BAE9F000318C00 /* KKViewController.m */; };
+		987DE6D818BAE9F000318C00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6B718BAE9F000318C00 /* InfoPlist.strings */; };
+		987DE6D918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6B918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist */; };
+		B6DFD41088574156A62DDC2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C576E52469A84BB19B89E23A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +64,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 92B6A49018AF06F400FA8CC5;
 			remoteInfo = SquigglePic;
+		};
+		987DE6DD18BAE9F100318C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987DE6B318BAE9F000318C00 /* KKColorListPickerExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A7A07F2186F343D005E9FEC;
+			remoteInfo = KKColorListPickerExample;
+		};
+		987DE6DF18BAE9F100318C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987DE6B318BAE9F000318C00 /* KKColorListPickerExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A7A0813186F343D005E9FEC;
+			remoteInfo = KKColorListPickerExampleTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,6 +106,53 @@
 		92B6A4CF18AF097400FA8CC5 /* ZZZSmoothBezierInterp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZZSmoothBezierInterp.h; sourceTree = "<group>"; };
 		987DE67418BA7FDC00318C00 /* linedpaper_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linedpaper_@2x.png"; sourceTree = "<group>"; };
 		987DE67518BA7FDC00318C00 /* linedpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaper.png; sourceTree = "<group>"; };
+		987DE67918BAE9F000318C00 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		987DE67A18BAE9F000318C00 /* KKColorListPicker.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KKColorListPicker.podspec; sourceTree = "<group>"; };
+		987DE67B18BAE9F000318C00 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		987DE67D18BAE9F000318C00 /* color_list_parser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = color_list_parser.rb; sourceTree = "<group>"; };
+		987DE67F18BAE9F000318C00 /* colors_crayola.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_crayola.plist; sourceTree = "<group>"; };
+		987DE68018BAE9F000318C00 /* colors_pantone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_pantone.plist; sourceTree = "<group>"; };
+		987DE68218BAE9F000318C00 /* colors_crayola.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colors_crayola.txt; sourceTree = "<group>"; };
+		987DE68318BAE9F000318C00 /* colors_pantone.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colors_pantone.txt; sourceTree = "<group>"; };
+		987DE68418BAE9F000318C00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		987DE68618BAE9F000318C00 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		987DE68718BAE9F000318C00 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		987DE68C18BAE9F000318C00 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		987DE68D18BAE9F000318C00 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		987DE68F18BAE9F000318C00 /* UIView+KKToolKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKToolKitAdditions.h"; sourceTree = "<group>"; };
+		987DE69018BAE9F000318C00 /* UIView+KKToolKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKToolKitAdditions.m"; sourceTree = "<group>"; };
+		987DE69218BAE9F000318C00 /* KKColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorCell.h; sourceTree = "<group>"; };
+		987DE69318BAE9F000318C00 /* KKColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorCell.m; sourceTree = "<group>"; };
+		987DE69418BAE9F000318C00 /* KKColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorCell.xib; sourceTree = "<group>"; };
+		987DE69518BAE9F000318C00 /* KKColorsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsHeaderView.h; sourceTree = "<group>"; };
+		987DE69618BAE9F000318C00 /* KKColorsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsHeaderView.m; sourceTree = "<group>"; };
+		987DE69718BAE9F000318C00 /* KKColorsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKColorsHeaderView.xib; sourceTree = "<group>"; };
+		987DE69918BAE9F000318C00 /* KKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColor.h; sourceTree = "<group>"; };
+		987DE69A18BAE9F000318C00 /* KKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColor.m; sourceTree = "<group>"; };
+		987DE69B18BAE9F000318C00 /* KKColorListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListPicker.h; sourceTree = "<group>"; };
+		987DE69C18BAE9F000318C00 /* KKColorsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsLoader.h; sourceTree = "<group>"; };
+		987DE69D18BAE9F000318C00 /* KKColorsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorsLoader.m; sourceTree = "<group>"; };
+		987DE69E18BAE9F000318C00 /* KKColorsSchemeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorsSchemeType.h; sourceTree = "<group>"; };
+		987DE6A018BAE9F000318C00 /* KKColorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKColorListViewController.h; sourceTree = "<group>"; };
+		987DE6A118BAE9F000318C00 /* KKColorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorListViewController.m; sourceTree = "<group>"; };
+		987DE6A318BAE9F000318C00 /* colors_crayola.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_crayola.plist; sourceTree = "<group>"; };
+		987DE6A418BAE9F000318C00 /* colors_pantone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors_pantone.plist; sourceTree = "<group>"; };
+		987DE6A818BAE9F000318C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		987DE6AA18BAE9F000318C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		987DE6AB18BAE9F000318C00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		987DE6AC18BAE9F000318C00 /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		987DE6AD18BAE9F000318C00 /* KKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		987DE6AE18BAE9F000318C00 /* KKColorListPickerExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KKColorListPickerExample-Info.plist"; sourceTree = "<group>"; };
+		987DE6AF18BAE9F000318C00 /* KKColorListPickerExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKColorListPickerExample-Prefix.pch"; sourceTree = "<group>"; };
+		987DE6B018BAE9F000318C00 /* KKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		987DE6B118BAE9F000318C00 /* KKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		987DE6B218BAE9F000318C00 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		987DE6B318BAE9F000318C00 /* KKColorListPickerExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KKColorListPickerExample.xcodeproj; sourceTree = "<group>"; };
+		987DE6B818BAE9F000318C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		987DE6B918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KKColorListPickerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		987DE6BA18BAE9F000318C00 /* KKColorListPickerExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorListPickerExampleTests.m; sourceTree = "<group>"; };
+		C576E52469A84BB19B89E23A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9F4C33BCD84C5F9A7C35B9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +163,7 @@
 				92B6A49718AF06F400FA8CC5 /* CoreGraphics.framework in Frameworks */,
 				92B6A49918AF06F400FA8CC5 /* UIKit.framework in Frameworks */,
 				92B6A49518AF06F400FA8CC5 /* Foundation.framework in Frameworks */,
+				B6DFD41088574156A62DDC2C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +187,7 @@
 				92B6A4BC18AF06F500FA8CC5 /* SquigglePicTests */,
 				92B6A49318AF06F400FA8CC5 /* Frameworks */,
 				92B6A49218AF06F400FA8CC5 /* Products */,
+				DA9F4C33BCD84C5F9A7C35B9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +207,7 @@
 				92B6A49618AF06F400FA8CC5 /* CoreGraphics.framework */,
 				92B6A49818AF06F400FA8CC5 /* UIKit.framework */,
 				92B6A4B618AF06F500FA8CC5 /* XCTest.framework */,
+				C576E52469A84BB19B89E23A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +233,7 @@
 		92B6A49B18AF06F400FA8CC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				987DE67818BAE9F000318C00 /* KKColorListPicker */,
 				92B6A49C18AF06F400FA8CC5 /* SquigglePic-Info.plist */,
 				92B6A49D18AF06F400FA8CC5 /* InfoPlist.strings */,
 				92B6A4A018AF06F400FA8CC5 /* main.m */,
@@ -175,6 +269,195 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		987DE67818BAE9F000318C00 /* KKColorListPicker */ = {
+			isa = PBXGroup;
+			children = (
+				987DE67918BAE9F000318C00 /* .gitignore */,
+				987DE67A18BAE9F000318C00 /* KKColorListPicker.podspec */,
+				987DE67B18BAE9F000318C00 /* LICENSE */,
+				987DE67C18BAE9F000318C00 /* parser */,
+				987DE68418BAE9F000318C00 /* README.md */,
+				987DE68518BAE9F000318C00 /* screenshots */,
+				987DE68818BAE9F000318C00 /* src */,
+			);
+			path = KKColorListPicker;
+			sourceTree = "<group>";
+		};
+		987DE67C18BAE9F000318C00 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				987DE67D18BAE9F000318C00 /* color_list_parser.rb */,
+				987DE67E18BAE9F000318C00 /* plists */,
+				987DE68118BAE9F000318C00 /* sources */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		987DE67E18BAE9F000318C00 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				987DE67F18BAE9F000318C00 /* colors_crayola.plist */,
+				987DE68018BAE9F000318C00 /* colors_pantone.plist */,
+			);
+			path = plists;
+			sourceTree = "<group>";
+		};
+		987DE68118BAE9F000318C00 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68218BAE9F000318C00 /* colors_crayola.txt */,
+				987DE68318BAE9F000318C00 /* colors_pantone.txt */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		987DE68518BAE9F000318C00 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68618BAE9F000318C00 /* 1.png */,
+				987DE68718BAE9F000318C00 /* 2.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		987DE68818BAE9F000318C00 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68918BAE9F000318C00 /* KKColorListPicker */,
+				987DE6A518BAE9F000318C00 /* KKColorListPickerExample */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		987DE68918BAE9F000318C00 /* KKColorListPicker */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68A18BAE9F000318C00 /* Categories */,
+				987DE69118BAE9F000318C00 /* Cells */,
+				987DE69818BAE9F000318C00 /* Classes */,
+				987DE69F18BAE9F000318C00 /* Controllers */,
+				987DE6A218BAE9F000318C00 /* Schemes */,
+			);
+			path = KKColorListPicker;
+			sourceTree = "<group>";
+		};
+		987DE68A18BAE9F000318C00 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68B18BAE9F000318C00 /* UIColor */,
+				987DE68E18BAE9F000318C00 /* UIView */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		987DE68B18BAE9F000318C00 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68C18BAE9F000318C00 /* UIColor+CustomColors.h */,
+				987DE68D18BAE9F000318C00 /* UIColor+CustomColors.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		987DE68E18BAE9F000318C00 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				987DE68F18BAE9F000318C00 /* UIView+KKToolKitAdditions.h */,
+				987DE69018BAE9F000318C00 /* UIView+KKToolKitAdditions.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		987DE69118BAE9F000318C00 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				987DE69218BAE9F000318C00 /* KKColorCell.h */,
+				987DE69318BAE9F000318C00 /* KKColorCell.m */,
+				987DE69418BAE9F000318C00 /* KKColorCell.xib */,
+				987DE69518BAE9F000318C00 /* KKColorsHeaderView.h */,
+				987DE69618BAE9F000318C00 /* KKColorsHeaderView.m */,
+				987DE69718BAE9F000318C00 /* KKColorsHeaderView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		987DE69818BAE9F000318C00 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				987DE69918BAE9F000318C00 /* KKColor.h */,
+				987DE69A18BAE9F000318C00 /* KKColor.m */,
+				987DE69B18BAE9F000318C00 /* KKColorListPicker.h */,
+				987DE69C18BAE9F000318C00 /* KKColorsLoader.h */,
+				987DE69D18BAE9F000318C00 /* KKColorsLoader.m */,
+				987DE69E18BAE9F000318C00 /* KKColorsSchemeType.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		987DE69F18BAE9F000318C00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6A018BAE9F000318C00 /* KKColorListViewController.h */,
+				987DE6A118BAE9F000318C00 /* KKColorListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		987DE6A218BAE9F000318C00 /* Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6A318BAE9F000318C00 /* colors_crayola.plist */,
+				987DE6A418BAE9F000318C00 /* colors_pantone.plist */,
+			);
+			path = Schemes;
+			sourceTree = "<group>";
+		};
+		987DE6A518BAE9F000318C00 /* KKColorListPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6A618BAE9F000318C00 /* KKColorListPickerExample */,
+				987DE6B318BAE9F000318C00 /* KKColorListPickerExample.xcodeproj */,
+				987DE6B618BAE9F000318C00 /* KKColorListPickerExampleTests */,
+			);
+			path = KKColorListPickerExample;
+			sourceTree = "<group>";
+		};
+		987DE6A618BAE9F000318C00 /* KKColorListPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6A718BAE9F000318C00 /* Main.storyboard */,
+				987DE6A918BAE9F000318C00 /* InfoPlist.strings */,
+				987DE6AB18BAE9F000318C00 /* Images.xcassets */,
+				987DE6AC18BAE9F000318C00 /* KKAppDelegate.h */,
+				987DE6AD18BAE9F000318C00 /* KKAppDelegate.m */,
+				987DE6AE18BAE9F000318C00 /* KKColorListPickerExample-Info.plist */,
+				987DE6AF18BAE9F000318C00 /* KKColorListPickerExample-Prefix.pch */,
+				987DE6B018BAE9F000318C00 /* KKViewController.h */,
+				987DE6B118BAE9F000318C00 /* KKViewController.m */,
+				987DE6B218BAE9F000318C00 /* main.m */,
+			);
+			path = KKColorListPickerExample;
+			sourceTree = "<group>";
+		};
+		987DE6B418BAE9F000318C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6DE18BAE9F100318C00 /* KKColorListPickerExample.app */,
+				987DE6E018BAE9F100318C00 /* KKColorListPickerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		987DE6B618BAE9F000318C00 /* KKColorListPickerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				987DE6B718BAE9F000318C00 /* InfoPlist.strings */,
+				987DE6B918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist */,
+				987DE6BA18BAE9F000318C00 /* KKColorListPickerExampleTests.m */,
+			);
+			path = KKColorListPickerExampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +465,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B6A4C618AF06F500FA8CC5 /* Build configuration list for PBXNativeTarget "SquigglePic" */;
 			buildPhases = (
+				6FE711C2BA044866A269E849 /* Check Pods Manifest.lock */,
 				92B6A48D18AF06F400FA8CC5 /* Sources */,
 				92B6A48E18AF06F400FA8CC5 /* Frameworks */,
 				92B6A48F18AF06F400FA8CC5 /* Resources */,
+				9587E3C312924F1887087889 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +524,12 @@
 			mainGroup = 92B6A48818AF06F400FA8CC5;
 			productRefGroup = 92B6A49218AF06F400FA8CC5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 987DE6B418BAE9F000318C00 /* Products */;
+					ProjectRef = 987DE6B318BAE9F000318C00 /* KKColorListPickerExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				92B6A49018AF06F400FA8CC5 /* SquigglePic */,
@@ -247,16 +538,52 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		987DE6DE18BAE9F100318C00 /* KKColorListPickerExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = KKColorListPickerExample.app;
+			remoteRef = 987DE6DD18BAE9F100318C00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		987DE6E018BAE9F100318C00 /* KKColorListPickerExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KKColorListPickerExampleTests.xctest;
+			remoteRef = 987DE6DF18BAE9F100318C00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		92B6A48F18AF06F400FA8CC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987DE6D018BAE9F000318C00 /* colors_pantone.plist in Resources */,
+				987DE6C018BAE9F000318C00 /* colors_pantone.plist in Resources */,
+				987DE6D518BAE9F000318C00 /* KKColorListPickerExample-Info.plist in Resources */,
+				987DE6D818BAE9F000318C00 /* InfoPlist.strings in Resources */,
 				92B6A4AB18AF06F400FA8CC5 /* Main_iPad.storyboard in Resources */,
+				987DE6C518BAE9F000318C00 /* 2.png in Resources */,
+				987DE6BB18BAE9F000318C00 /* .gitignore in Resources */,
+				987DE6D118BAE9F000318C00 /* Main.storyboard in Resources */,
 				987DE67718BA7FDC00318C00 /* linedpaper.png in Resources */,
 				987DE67618BA7FDC00318C00 /* linedpaper_@2x.png in Resources */,
+				987DE6BC18BAE9F000318C00 /* KKColorListPicker.podspec in Resources */,
+				987DE6D218BAE9F000318C00 /* InfoPlist.strings in Resources */,
+				987DE6D918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist in Resources */,
+				987DE6C918BAE9F000318C00 /* KKColorCell.xib in Resources */,
 				92B6A4B018AF06F400FA8CC5 /* Images.xcassets in Resources */,
+				987DE6BF18BAE9F000318C00 /* colors_crayola.plist in Resources */,
+				987DE6C418BAE9F000318C00 /* 1.png in Resources */,
 				92B6A4A818AF06F400FA8CC5 /* Main_iPhone.storyboard in Resources */,
+				987DE6BE18BAE9F000318C00 /* color_list_parser.rb in Resources */,
+				987DE6C118BAE9F000318C00 /* colors_crayola.txt in Resources */,
+				987DE6C318BAE9F000318C00 /* README.md in Resources */,
+				987DE6C218BAE9F000318C00 /* colors_pantone.txt in Resources */,
+				987DE6CB18BAE9F000318C00 /* KKColorsHeaderView.xib in Resources */,
+				987DE6CF18BAE9F000318C00 /* colors_crayola.plist in Resources */,
 				92B6A49F18AF06F400FA8CC5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,15 +598,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FE711C2BA044866A269E849 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9587E3C312924F1887087889 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92B6A48D18AF06F400FA8CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987DE6D418BAE9F000318C00 /* KKAppDelegate.m in Sources */,
+				987DE6CC18BAE9F000318C00 /* KKColor.m in Sources */,
 				92B6A4A118AF06F400FA8CC5 /* main.m in Sources */,
 				92B6A4CD18AF096C00FA8CC5 /* ZZZSmoothBezierInterp.m in Sources */,
+				987DE6C618BAE9F000318C00 /* UIColor+CustomColors.m in Sources */,
+				987DE6CA18BAE9F000318C00 /* KKColorsHeaderView.m in Sources */,
 				92B6A4A518AF06F400FA8CC5 /* ZZZAppDelegate.m in Sources */,
 				92B6A4AE18AF06F400FA8CC5 /* ZZZViewController.m in Sources */,
+				987DE6CE18BAE9F000318C00 /* KKColorListViewController.m in Sources */,
+				987DE6C718BAE9F000318C00 /* UIView+KKToolKitAdditions.m in Sources */,
+				987DE6CD18BAE9F000318C00 /* KKColorsLoader.m in Sources */,
+				987DE6C818BAE9F000318C00 /* KKColorCell.m in Sources */,
+				987DE6D618BAE9F000318C00 /* KKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +700,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				92B6A4C018AF06F500FA8CC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		987DE6A718BAE9F000318C00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				987DE6A818BAE9F000318C00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		987DE6A918BAE9F000318C00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				987DE6AA18BAE9F000318C00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		987DE6B718BAE9F000318C00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				987DE6B818BAE9F000318C00 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -414,11 +807,17 @@
 		};
 		92B6A4C718AF06F500FA8CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9F4C33BCD84C5F9A7C35B9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SquigglePic/SquigglePic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/PEPhotoCropEditor\"",
+					"\"${SRCROOT}/KKColorListPicker/\"/**",
+				);
 				INFOPLIST_FILE = "SquigglePic/SquigglePic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -427,11 +826,17 @@
 		};
 		92B6A4C818AF06F500FA8CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9F4C33BCD84C5F9A7C35B9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SquigglePic/SquigglePic-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/PEPhotoCropEditor\"",
+					"\"${SRCROOT}/KKColorListPicker/\"/**",
+				);
 				INFOPLIST_FILE = "SquigglePic/SquigglePic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

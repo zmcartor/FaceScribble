@@ -9,5 +9,7 @@
 
 - (void)attachRecognizers;
 
+@property (nonatomic, strong) UIColor *strokeColor;
+
 
 @end

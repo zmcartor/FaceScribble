@@ -21,35 +21,36 @@
     int mode;
 }
 
-- (void)didMoveToSuperview {
+
+- (void)attachRecognizers {
+    mode = 0;
+    [self setMultipleTouchEnabled:NO];
+    [self setBackgroundColor:[UIColor whiteColor]];
+    savedPaths = [[NSMutableDictionary alloc] init];
+    
+    // IMPORTANT means view will keep listening after first touch is detected.
+    [self setMultipleTouchEnabled:YES];
+    
+    /* single tap not needed
+     UITapGestureRecognizer *taprecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+     taprecog.numberOfTapsRequired = 1;
+     [self addGestureRecognizer:taprecog];
+     */
+    
+    UITapGestureRecognizer *doubleTaprecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
+    doubleTaprecog.numberOfTapsRequired = 2;
+    [self addGestureRecognizer:doubleTaprecog];
+    
     // cache the background view into placeholder image.
     // all paths are added to this image incrementally as an image cache
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
     UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
-    [self.backgroundColor setFill];
+    [[UIColor colorWithPatternImage:[UIImage imageNamed:@"linedpaper"]] setFill];
     [rectpath fill];
     incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-}
-
-- (void)attachRecognizers {
-        mode = 0;
-        [self setMultipleTouchEnabled:NO];
-        [self setBackgroundColor:[UIColor whiteColor]];
-        savedPaths = [[NSMutableDictionary alloc] init];
-        
-        // IMPORTANT means view will keep listening after first touch is detected.
-        [self setMultipleTouchEnabled:YES];
-      
-        /* single tap not needed
-        UITapGestureRecognizer *taprecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-        taprecog.numberOfTapsRequired = 1;
-        [self addGestureRecognizer:taprecog];
-        */
-        
-        UITapGestureRecognizer *doubleTaprecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
-        doubleTaprecog.numberOfTapsRequired = 2;
-        [self addGestureRecognizer:doubleTaprecog];
+    
+    self.strokeColor = [UIColor blackColor];
 }
 
 - (void)tap:(UITapGestureRecognizer *)recog {
@@ -70,6 +71,8 @@
 - (void)drawRect:(CGRect)rect {
     [incrementalImage drawInRect:rect];
     if (currentPath){
+        [self.strokeColor setFill];
+        [self.strokeColor setStroke];
         [currentPath stroke];
     }
 }
@@ -129,11 +132,10 @@
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
     [incrementalImage drawAtPoint:CGPointZero];
 
-    // Stroke the latest activity into the context
-    // TODO get the latest color
-    [[UIColor blackColor] setStroke];
-    
+    // stroke in with current selected color
+    [self.strokeColor setStroke];
     [latestActivity stroke];
+    
     incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 }

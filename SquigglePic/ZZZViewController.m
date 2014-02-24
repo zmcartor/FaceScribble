@@ -8,6 +8,7 @@
 
 #import "ZZZViewController.h"
 #import "ZZZSmoothBezierInterp.h"
+#import "KKColorListPicker.h"
 
 @interface ZZZViewController ()
 
@@ -15,21 +16,16 @@
 
 @implementation ZZZViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.toolbarHidden = NO;
-}
 
-- (void)viewWillAppear:(BOOL)animated {
     ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
     [view attachRecognizers];
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"linedpaper"] ];
+
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -54,10 +50,9 @@
 }
 
 - (IBAction)colorButtonTouch:(id)sender {
-    
-    // pop open the color picker!
-    
-    
+    KKColorListViewController *controller = [[KKColorListViewController alloc] initWithSchemeType:KKColorsSchemeTypePantone];
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)showActionSheetPhotoDatasource {
@@ -97,5 +92,12 @@
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
+
+#pragma mark - KKColorDelegate
+- (void)colorListController:(KKColorListViewController *)controller didSelectColor:(KKColor *)color {
+    ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
+    view.strokeColor = color.uiColor;
+}
+
 
 @end

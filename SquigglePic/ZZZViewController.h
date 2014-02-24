@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KKColorListPicker.h"
 
-@interface ZZZViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
+@interface ZZZViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate, KKColorListViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *leftToolbarButton;
 - (IBAction)leftToolbarTouch:(id)sender;
 

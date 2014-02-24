@@ -1,3 +1,6 @@
 [submodule "NLImageCropper"]
 	path = NLImageCropper
 	url = git@github.com:bilalmughal/NLImageCropper.git
+[submodule "KKColorListPicker"]
+	path = KKColorListPicker
+	url = git@github.com:leoru/KKColorListPicker.git
