@@ -127,6 +127,7 @@
 }
 
 - (IBAction)thicknessSliderChanged:(UISlider *)sender {
+    NSLog(@"changed!!");
     // TODO
     // update the stroke thickness on UIView.
     // increase width of stroke circle

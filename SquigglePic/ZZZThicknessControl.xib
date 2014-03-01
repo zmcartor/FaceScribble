@@ -20,7 +20,6 @@
                     <rect key="frame" x="18" y="5" width="237" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
-                        <action selector="sliderMoved:" destination="-1" eventType="valueChanged" id="QSV-hq-ZOr"/>
                         <action selector="thicknessSliderChanged:" destination="-1" eventType="valueChanged" id="Tac-gf-GcI"/>
                     </connections>
                 </slider>
