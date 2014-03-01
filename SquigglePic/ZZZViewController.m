@@ -9,6 +9,8 @@
 #import "ZZZViewController.h"
 #import "ZZZSmoothBezierInterp.h"
 #import "KKColorListPicker.h"
+#import <UIView+EasingFunctions/UIView+EasingFunctions.h>
+#import <AHEasing/easing.h>
 
 @interface ZZZViewController ()
 
@@ -19,11 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.toolbarHidden = NO;
-
+    
     ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
     [view attachRecognizers];
     
     [self updateStrokeColor:[self randomColor]];
+    
+    NSArray *subviews = [[NSBundle mainBundle] loadNibNamed:@"ZZZThicknessControl" owner:self options:nil];
+    self.thicknessControlView = subviews[0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,5 +114,21 @@
     return color;
 }
 
+- (IBAction)thicknessButtonTapped:(id)sender {
+    self.thicknessControlView.frame = CGRectMake(0, self.view.frame.size.height, 320.0, 44.0);
+    [self.view addSubview:self.thicknessControlView];
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        [self.thicknessControlView setEasingFunction:BounceEaseOut forKeyPath:@"frame"];
+        self.thicknessControlView.frame = CGRectMake(0, self.view.frame.size.height-88, 320, 44);
+    } completion:^(BOOL finished) {
+        [self.thicknessControlView removeEasingFunctionForKeyPath:@"frame"];
+    }];
+}
 
+- (IBAction)thicknessSliderChanged:(UISlider *)sender {
+    // TODO
+    // update the stroke thickness on UIView.
+    // increase width of stroke circle
+}
 @end

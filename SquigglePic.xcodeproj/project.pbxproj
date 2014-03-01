@@ -54,6 +54,7 @@
 		987DE6D618BAE9F000318C00 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987DE6B118BAE9F000318C00 /* KKViewController.m */; };
 		987DE6D818BAE9F000318C00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6B718BAE9F000318C00 /* InfoPlist.strings */; };
 		987DE6D918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987DE6B918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist */; };
+		98BCA94418C18D44000952BC /* ZZZThicknessControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BCA94318C18D44000952BC /* ZZZThicknessControl.xib */; };
 		B6DFD41088574156A62DDC2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C576E52469A84BB19B89E23A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +152,7 @@
 		987DE6B818BAE9F000318C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		987DE6B918BAE9F000318C00 /* KKColorListPickerExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KKColorListPickerExampleTests-Info.plist"; sourceTree = "<group>"; };
 		987DE6BA18BAE9F000318C00 /* KKColorListPickerExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKColorListPickerExampleTests.m; sourceTree = "<group>"; };
+		98BCA94318C18D44000952BC /* ZZZThicknessControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZZThicknessControl.xib; sourceTree = "<group>"; };
 		C576E52469A84BB19B89E23A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F4C33BCD84C5F9A7C35B9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +226,7 @@
 				92B6A4A918AF06F400FA8CC5 /* Main_iPad.storyboard */,
 				92B6A4AC18AF06F400FA8CC5 /* ZZZViewController.h */,
 				92B6A4AD18AF06F400FA8CC5 /* ZZZViewController.m */,
+				98BCA94318C18D44000952BC /* ZZZThicknessControl.xib */,
 				92B6A4AF18AF06F400FA8CC5 /* Images.xcassets */,
 				92B6A49B18AF06F400FA8CC5 /* Supporting Files */,
 			);
@@ -563,6 +566,7 @@
 				987DE6D018BAE9F000318C00 /* colors_pantone.plist in Resources */,
 				987DE6C018BAE9F000318C00 /* colors_pantone.plist in Resources */,
 				987DE6D518BAE9F000318C00 /* KKColorListPickerExample-Info.plist in Resources */,
+				98BCA94418C18D44000952BC /* ZZZThicknessControl.xib in Resources */,
 				987DE6D818BAE9F000318C00 /* InfoPlist.strings in Resources */,
 				92B6A4AB18AF06F400FA8CC5 /* Main_iPad.storyboard in Resources */,
 				987DE6C518BAE9F000318C00 /* 2.png in Resources */,

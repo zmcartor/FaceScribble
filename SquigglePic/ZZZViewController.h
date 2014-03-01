@@ -17,4 +17,11 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *colorButton;
 
+// thickness control
+@property (strong, nonatomic) IBOutlet UIView *thicknessControlView;
+@property (weak, nonatomic) IBOutlet UISlider *thicknessSlider;
+@property (weak, nonatomic) IBOutlet UIView *thicknessVisualizer;
+- (IBAction)thicknessButtonTapped:(id)sender;
+- (IBAction)thicknessSliderChanged:(UISlider *)sender;
+
 @end

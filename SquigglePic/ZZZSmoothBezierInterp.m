@@ -5,6 +5,7 @@
 //
 
 #import "ZZZSmoothBezierInterp.h"
+#import <AHEasing/easing.h>
 
 @interface ZZZSmoothBezierInterp ()
 
