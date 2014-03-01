@@ -21,7 +21,6 @@
     int mode;
 }
 
-
 - (void)attachRecognizers {
     mode = 0;
     [self setMultipleTouchEnabled:NO];

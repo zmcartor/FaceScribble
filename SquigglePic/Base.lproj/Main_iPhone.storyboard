@@ -26,7 +26,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="220" style="plain" systemItem="fixedSpace" id="aB6-LV-KxX"/>
-                                    <barButtonItem title="Item" style="plain" id="SI3-D2-Ldz">
+                                    <barButtonItem title="Color" style="plain" id="SI3-D2-Ldz">
                                         <connections>
                                             <action selector="colorButtonTouch:" destination="vXZ-lx-hvc" id="2gf-Ec-KNn"/>
                                         </connections>

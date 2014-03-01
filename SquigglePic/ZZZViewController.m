@@ -22,19 +22,14 @@
 
     ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
     [view attachRecognizers];
-
+    
+    [self updateStrokeColor:[self randomColor]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)rightToolbarTouch:(id)sender {
-    NSLog(@"right click");
-}
-
-// TODO use an actionsheet to pick camera or library ...
 - (IBAction)leftToolbarTouch:(id)sender {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [self showActionSheetPhotoDatasource];
@@ -95,8 +90,23 @@
 
 #pragma mark - KKColorDelegate
 - (void)colorListController:(KKColorListViewController *)controller didSelectColor:(KKColor *)color {
+    [self updateStrokeColor:color.uiColor];
+}
+
+- (void)updateStrokeColor:(UIColor *)color {
     ZZZSmoothBezierInterp *view = (ZZZSmoothBezierInterp *)self.view;
-    view.strokeColor = color.uiColor;
+    view.strokeColor = color;
+    
+    // set the color of the button to this color
+    [self.colorButton setTintColor:color];
+}
+
+- (UIColor *)randomColor {
+    CGFloat red = arc4random() % 255 / 255.0;
+    CGFloat green = arc4random() % 255 / 255.0;
+    CGFloat blue = arc4random() % 255 / 255.0;
+    UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    return color;
 }
 
 
