@@ -43,6 +43,7 @@
                     <connections>
                         <outlet property="colorButton" destination="SI3-D2-Ldz" id="nj7-Mk-HS9"/>
                         <outlet property="leftToolbarButton" destination="qS1-3D-hTD" id="KaR-sW-Hpu"/>
+                        <outlet property="toolbarView" destination="rpG-hT-IuT" id="Nz4-bN-bb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

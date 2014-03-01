@@ -24,4 +24,7 @@
 - (IBAction)thicknessButtonTapped:(id)sender;
 - (IBAction)thicknessSliderChanged:(UISlider *)sender;
 
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbarView;
+
+
 @end

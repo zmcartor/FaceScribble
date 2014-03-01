@@ -116,7 +116,8 @@
 
 - (IBAction)thicknessButtonTapped:(id)sender {
     self.thicknessControlView.frame = CGRectMake(0, self.view.frame.size.height, 320.0, 44.0);
-    [self.view addSubview:self.thicknessControlView];
+    
+    [self.view insertSubview:self.self.thicknessControlView belowSubview:self.toolbarView];
     
     [UIView animateWithDuration:0.4 animations:^{
         [self.thicknessControlView setEasingFunction:BounceEaseOut forKeyPath:@"frame"];
